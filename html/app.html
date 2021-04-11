@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/appCss.css">
+    <link rel="stylesheet" type="text/css" href="../css/navBar.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+    <title>App</title>
+    <link rel = "icon" type = "image/png" href = "../images/PiLi-uten%20text.png">
+    <link rel = "apple-touch-icon" type = "image/png" href = "../images/PiLi-uten%20text.png"/>
+
+
+</head>
+<body>
+
+
+    <nav class="navBar">
+        <ul>
+            <li><a href="../index.html"><img src="../images/PiLiText.png" width="40px" class="navPic"></a></li>
+            <li><a href="../index.html"><img src="../images/PiLi-uten%20text.png" width="40px" class="navPic2"></a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./problem.html">Problem</a></li>
+            <li><a class="active" href="./app.html">App</a></li>
+        </ul>
+    </nav>
+    <nav class="navBarDropDown">
+        <img src="../images/round_menu_black_48dp.png" class="dropdownmenuimg">
+        <div class="dropDownContent">
+            <a href="../index.html">Home</a>
+            <a href="../html/problem.html">Problem</a>
+            <a class="active" href="../html/app.html">App</a>
+        </div>
+    </nav>
+
+<br>
+<br>
+<br>
+
+<div class="appContainer">
+    <div class="appText">
+        <h1>Our vision in an App</h1>
+        <p>
+            With our app, PILI (Play it, Learn it) we want to create a platform where children can meet, play and learn. We want to ensure that the Syrian children in crisis areas have the possibility to continue learning, and at the same time have connection with other children and teachers. PILI will lay a foundation for a learning environment that is fun and easy to access. Since the target group is children aged 6-18 years, the app will offer different difficulties based on which level/class you are on.
+            </p>
+      <!--  <h1>Why is PILI an ideal app for further learning?</h1> -->
+        <br>
+        <p>Our app is ideal for its use because it enhances the connection between learning and fun.
+            The association between the words “learning” and “fun” needs to be stronger, and PILI will contribute in that.
+            The app also provides in creating a community between children and teachers, where they can cooperate and
+            learn together. Working and learning together with other children amplifies both motivation and
+            inspiration, which will help the children in further advancing their skills as they get older.
+        </p>
+    </div>
+</div>
+
+<div class="appImg-container">
+
+    <div class="slide">
+        <img src="../images/phoneSlide2.png">
+        <div class="appImg-container2">
+            <div class = "container2-tekst">
+                <p>
+                    The quizzes will be an extra platform inside the app where you
+                    can challenge and test yourself. This will
+                    be an alternative to the adventure game, where you can browse through hundreds of
+                    quizzes and challenge yourself
+                    even further. All of the quizzes will be divided into different categories and difficulties.
+                </p>
+            </div>
+            <div class = "container2-pil1" onclick="plusSlide(1)">
+                <a class="forrige">&#8592;</a>
+            </div>
+            <div class = "container2-pil2" onclick = "plusSlide(-1)">
+                <a class="neste">&#8594;</a>
+            </div>
+        </div>
+    </div>
+
+        <div class="slide">
+            <img src="../images/phoneSlide1.png">
+            <div class="appImg-container2">
+                <div class = "container2-tekst">
+            <p>
+                The forum is a place where you can connect with other students and teachers wherever you are, so that you
+                can discuss, get help or just share information about which level you are on in your adventure game. We want
+                to make this a safe place for all the students, where they feel that they can hang-out with each-other even
+                though they are not in the same room, building or village even. There will also be a possibility to chat and
+                connect with teachers, who will be available in certain timeslots.
+            </p>
+                </div>
+                <div class = "container2-pil1" onclick="plusSlide(1)">
+                    <a class="forrige">&#8592;</a>
+                </div>
+                <div class = "container2-pil2" onclick = "plusSlide(-1)">
+                    <a class="neste">&#8594;</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="slide">
+        <img src="../images/phoneSlide3.png">
+        <div class="appImg-container2">
+            <div class = "container2-tekst">
+                <p>
+                    In short terms, the app will offer three different stations; an adventure game,
+                    a forum and a quiz-page. The adventure game can be compared to other similar games,
+                    such as Candy Crush, where you can climb and reach different levels. The levels will consist
+                    of small games and task which you must solve and get through to be able to reach the next level.
+                    For every 5th level there will be a video that you have to watch to be able to pass through
+                    the next levels.
+                    The videos will be short and informational, where you learn information about different subjects,
+                    such as math,
+                    geography, history etc. The higher level, the harder difficulty!
+                </p>
+            </div>
+            <div class = "container2-pil1" onclick="plusSlide(1)">
+                <a class="forrige">&#8592;</a>
+            </div>
+            <div class = "container2-pil2" onclick = "plusSlide(-1)">
+                <a class="neste">&#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <ul>
+        <li><a href="../html/team.html">Our Team</a></li>
+        <li><a href="../html/sources.html">Sources</a></li>
+        <li></li>
+        <li><a href="#"><img src="../images/appStore.png"></a></li>
+        <li><a href="#"><img src="../images/googlePlay.svg"></a></li>
+    </ul>
+</footer>
+    <script>
+        //Noen elementer er tatt fra w3schools; https://www.w3schools.com/howto/howto_js_slideshow.asp
+        let indeks = 1;
+        visBilder(indeks);
+
+        function plusSlide(n){
+            visBilder(indeks=indeks+n);
+        }
+
+        function visBilder(n) {
+            let i;
+            let bilder = document.getElementsByClassName("slide");
+
+            if (bilder.length < n ){
+                indeks = 1;
+            }
+            if (n<1){
+                indeks = bilder.length;
+            }
+            for (i=0;i<bilder.length;i++){
+                bilder[i].style.display = "none";
+            }
+            bilder[indeks-1].style.display ="flex";
+        }
+    </script>
+</body>
+</html>

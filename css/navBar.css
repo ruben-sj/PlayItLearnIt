@@ -1,0 +1,118 @@
+.navBar{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    /*background: radial-gradient(#EDEFF0, white);*/
+    background-color: white;
+    box-shadow: 0 5px 5px -5px;
+    z-index: 100;
+}
+.navBar ul li{
+    text-align: center;
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 0%;
+    margin-left: 110px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navBar ul li a{
+    text-decoration: none;
+    color: black;
+    width: 2%;
+    font-weight: normal;
+    font-family: helvetica;
+    text-transform: uppercase;
+}
+.navBar ul li a.active{
+    border-bottom: 2px solid #007AFF;
+}
+.navBar ul li a:hover {
+    border-bottom: 2px solid #007AFF;
+    transition: 50ms ease-in;
+}
+.dropdownmenuimg{
+    display: none;
+}
+.dropDownContent {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background: linear-gradient(white, #EDEFF0);
+    box-shadow: -5px 5px 5px -5px;
+    border-radius: 0 0 0 10px;
+    text-align: center;
+    width: 60%;
+    cursor: pointer;
+    z-index: 10;
+}
+.dropDownContent a {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 80px;
+    color: black;
+}
+.navBarDropDown:hover .dropDownContent{
+    display: block;
+}
+.dropdownmenuimg:hover .dropDownContent{
+    display: block;
+}
+.navPic{
+    position: fixed;
+    top: 2px;
+    height: 90px;
+    left: 25px;
+    width: auto;
+    z-index: 101;
+}
+.navBar ul li:nth-child(2){
+    display: none;
+}
+.navPic2{
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    height: 90px;
+    width: auto;
+    z-index: 101;
+}
+@media only screen and (max-width: 768px){
+    .navBar ul li:nth-child(1), .navBar ul li:nth-child(3), .navBar ul li:nth-child(4), .navBar ul li:nth-child(5){
+        display: none;
+    }
+    .navBar ul li:nth-child(2){
+        display: block;
+    }
+    .dropdownmenuimg{
+        display: block;
+        position: fixed;
+        border-color: #4A4B4B;
+        padding-bottom: 20px;
+        padding-left: 35%;
+        top: 13px;
+        right: 20px;
+        width: 40px;
+        height: auto;
+        opacity: 0.7;
+        cursor: pointer;
+        z-index: 9000;
+    }
+    .dropDownContent a.active, a:hover{
+        text-decoration: underline #007AFF;
+    }
+}
+@media only screen and (max-width: 500px){
+    .dropDownContent{
+        width: 100%;
+        border-radius: 0 0 0 0;
+    }
+}

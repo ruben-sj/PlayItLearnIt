@@ -1,0 +1,103 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-image: linear-gradient(white,white,white, #e0efff);
+}
+.homeContainer{
+    position: relative;
+    top: 2vw;
+    display: flex;
+    padding: 10% 10% 5% 10%;
+    width: 80%;
+    margin-bottom: 10%;
+}
+.homeText{
+    float: left;
+    padding: 5% 5%;
+    width: 35%;
+}
+.homeText p{
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 20px;
+    text-align: right;
+}
+q{
+    font-style: oblique;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-align: left;
+
+}
+
+.homeText h1{
+    font-family: "Arial";
+    font-size: 2.5em;
+}
+
+.homeImage{
+    float: right;
+    width: 50%;
+    padding: 5% 5%;
+}
+
+.homeImage img {
+    width: 100%;
+}
+@media only screen and (max-width: 1025px){
+    .homeContainer{
+        top: 10vw;
+        width: 90%;
+        padding: 10% 5% 5% 10%;
+        margin-bottom: 30%;
+    }
+    .homeText{
+        width: 40%;
+        float: none;
+        padding: 0;
+    }
+    .homeImage{
+        padding: 5% 5%;
+        width: 40%;
+        float: none;
+    }
+    .homeImage img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .homeContainer{
+        display: block;
+        top: 30vw;
+        width: 90%;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-bottom: 70%;
+    }
+    .homeText{
+        width: 100%;
+        float: none;
+        padding: 0 0;
+
+    }
+    .homeText h1{
+        font-size: 1.5em;
+    }
+    q{
+        font-size: 17px;
+        line-height: 1.5em;
+        margin-bottom: 2vw;
+    }
+    .homeText p{
+        font-size: 12px;
+    }
+    .homeImage{
+        width: 100%;
+        float: none;
+        padding: 0 0;
+    }
+    .homeImage img{
+        width: 100%;
+    }
+}

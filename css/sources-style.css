@@ -1,0 +1,22 @@
+body{
+    background-image: linear-gradient(white,white,white, #e0efff);
+    margin: 0;
+    padding: 0;
+}
+.sourcesContainer{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    font-size: 16px;
+
+    word-wrap: break-word;
+    width: 80%;
+}
+
+.sourcesContainer ul li{
+    list-style: none;
+    padding-bottom: 4em;
+}
+
+.push{
+    height: 80px;
+}
